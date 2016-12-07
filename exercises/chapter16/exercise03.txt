@@ -1,0 +1,8 @@
+scala> <li>Fred</li> match { case <li>{Text(t)}</li> => t }
+res5: String = Fred
+
+scala> <li>{"Fred"}</li> match { case <li>{Text(t)}</li> => t }
+scala.MatchError: <li>Fred</li> (of class scala.xml.Elem)
+  ... 33 elided
+  
+Embedded strings do not get turned into Text nodes but into Atom[String] nodes.

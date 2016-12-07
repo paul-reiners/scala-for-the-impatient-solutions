@@ -1,0 +1,25 @@
+	<ul>
+		<li>Opening bracket: [</li>
+		<li>Closing bracket: ]</li>
+		<li>Opening brace: {</li>
+		<li>Closing brace: }</li>
+	</ul>
+
+The opening brace is interpreted as the beginning of an embedded expression.
+
+Corrected version:
+
+	<ul>
+		<li>Opening bracket: [</li>
+		<li>Closing bracket: ]</li>
+		<li>Opening brace: {{</li>
+		<li>Closing brace: }}</li>
+	</ul>
+
+	res3: scala.xml.Elem =
+	<ul>
+	<li>Opening bracket: [</li>
+	<li>Closing bracket: ]</li>
+	<li>Opening brace: {</li>
+	<li>Closing brace: }</li>
+	</ul>

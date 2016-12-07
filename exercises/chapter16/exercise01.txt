@@ -1,0 +1,7 @@
+scala> <fred/>(0)
+res0: scala.xml.Node = <fred/>
+
+scala> <fred/>(0)(0)
+res1: scala.xml.Node = <fred/>
+
+They are the same thing.  This is because the Node class extends NodeSeq.
